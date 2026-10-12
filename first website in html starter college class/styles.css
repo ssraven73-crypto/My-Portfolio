@@ -1,0 +1,11 @@
+body{
+	background-image: url('background.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+.main {
+	background-color: lightskyblue;
+ 	border: 15px double navy;
+}
