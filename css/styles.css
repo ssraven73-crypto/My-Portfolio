@@ -1,0 +1,159 @@
+
+/*
+Author: Eternia Greer
+File Name: styles.css
+Date: 10/9/2026
+*/
+
+/* CSS Reset */
+    body, header, nav, footer, ul
+    {margin: 0;
+    padding: 0;
+    border: 0;}
+
+    body 
+/* Style rules for body and images */
+    {background-color: rgb(181, 107, 224);}
+
+    img 
+ /* Style rules for img will go here */
+    {max-width: 100%;
+    display: block;}
+
+    .mobile
+/* style rules for moble viewpoint */
+        {display: block;}
+
+    .tab-desk
+/* Style rules to show mobile class and hide tab-desk class.*/ 
+         {display: none;}
+
+/* Style rules for header area*/
+    .mobile h1, .mobile h3 
+         {padding: 2%;
+        text-align: center;}
+
+    .mobile h1 
+        {font-family: "Emblema One", system-ui;}
+    .mobile h3 
+        {font-family: "Lora", serif ;}
+
+/*navigation bar and text style*/
+    nav 
+        {background-color: rgb(93, 23, 130);}
+
+    nav ul 
+        {list-style-type: none;
+        margin: 0;
+        text-align: center;}
+
+    nav li 
+        {display: block;
+        border-top: solid;
+        border-top-width: 0.5px;
+        border-top-color:rgb(181, 107, 224);
+        font-size: 1.5em;
+        font-family: Geneva, Arial, sans-serif;
+        font-weight: bold;}
+
+    nav li a 
+        {display: block;
+        color: #ffffff;
+        padding: 0.5em 2em;
+        text-decoration: none;}
+
+/* Style rules for main content */
+
+main 
+    {padding: 2%;
+    font-family: Verdana, Arial, sans-serif;}
+
+main p 
+    {font-size: 1.25em;}
+
+main h3 
+    {padding-top: 2%;}
+
+main ul 
+    {list-style-type: square;}
+
+    /*  Style rules for class and id selectors */
+
+.link 
+    {color:#5f2020;
+     text-decoration: none;
+    font-weight: bold;
+    font-style: italic;}
+
+.action 
+    {font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;}
+
+#contact
+    {text-align: center;}
+
+    /* Style rules for footer content */
+
+footer 
+    { text-align: center;
+    font-size: 0.85em;
+    background-color: rgb(93, 23, 130);
+    color: #ffffff;
+    padding: 1% 0%;}
+
+footer a 
+    {color: #ffffff;
+    text-decoration: none;}
+
+/* Media Query for Tablet Viewport. */
+@media screen and (min-width: 620px), print {
+
+/* Tablet Viewport: Show tab-desk class, hide mobile class */
+.tab-desk 
+    {display: block;}
+
+.mobile 
+    {display: none;}
+
+/* Tablet Viewport: Style rules for nav area */
+
+nav li 
+    {border-top: none;
+    display: inline-block;
+    font-size: 1.25em;}
+
+nav li a 
+    {padding: 0.5em;}
+    }
+/* Media Query for Large Desktop Viewports. */
+@media screen and (min-width: 1921px) {
+body 
+{background: linear-gradient(#a242cb, #5e2079)}
+#wrapper{
+    width: auto;
+    margin: 0 auto; /* goes clockwise (top, right, bottom, left) */}
+main {background-color: #ffffff ;
+}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print{
+
+nav li 
+    {border-top: none;
+    display: inline-block;
+    font-size: 1.5em;}
+
+nav li a 
+    {padding: 0.5em;}
+
+nav li a:hover {
+    color: #5e2079;
+    background-color:#a242cb ;}
+
+/* Desktop Viewport: Style rules for main content */
+#info ul 
+        {margin: 5%;}
+    }
+
